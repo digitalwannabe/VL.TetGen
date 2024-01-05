@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="EWfRz1Fc0vDNhcP50AhRgB" LanguageVersion="2023.5.3-0423-gee17475a3a" Version="0.128">
+  <NugetDependency Id="VAHgOaemmkIPxdPIOB6nLO" Location="VL.CoreLib" Version="2023.5.3-0423-gee17475a3a" />
+  <Patch Id="CX04FJC9M84NKk3a74Usej">
+    <Canvas Id="V5PnnUE9C6dMe3yLVt25kv" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="RyqIhnWqPjgMpi4KlvD4bY">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="I8morQ03tRoMI0hOsU3W6j">
+        <Canvas Id="KL3jQcax6NeOkgOhx50LaC" CanvasType="Group">
+          <Node Bounds="438,277,305,19" Id="OJktaEen1JcQd9LUtu5CkE">
+            <p:NodeReference LastCategoryFullName="TetGenNativeWrapper.NativeDllAdapter" LastDependency="TetGenNativeWrapper.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="AssemblyCategory" Name="TetGenNativeWrapper" />
+              <CategoryReference Kind="AssemblyCategory" Name="NativeDllAdapter" />
+              <Choice Kind="OperationCallFlag" Name="tetCalculate" />
+            </p:NodeReference>
+            <Pin Id="FPkLicP3uorNKB9kEo8zSo" Name="Behaviour" Kind="InputPin" />
+            <Pin Id="C5vjXbQR1t7O39d0KRuY80" Name="Vert XYZ" Kind="InputPin" />
+            <Pin Id="SgzJElIC994PmRUwv9vVwK" Name="Vert Attr" Kind="InputPin" />
+            <Pin Id="D0sUMzf0BFWO9gyXjjLtGw" Name="Vert Marker" Kind="InputPin" />
+            <Pin Id="UqEVnqLk8oXMujmAyZ0xVd" Name="Num Poly" Kind="InputPin" />
+            <Pin Id="O9Qxqm2XSpqMuhgQCiEl6Y" Name="Num Vertices" Kind="InputPin" />
+            <Pin Id="M31SpjC1TjmMBJo99IcQ7q" Name="Vert Index" Kind="InputPin" />
+            <Pin Id="HMPHrJREOMYQIhp912AVzf" Name="Num FHoles" Kind="InputPin" />
+            <Pin Id="QTu5tj9CJUyQGclT7GbKfL" Name="F Hole XYZ" Kind="InputPin" />
+            <Pin Id="GFa3aXUYi6UOBKT9qBXP1T" Name="Facet Marker" Kind="InputPin" />
+            <Pin Id="AVG6PHiws18Nttb1fm8hcG" Name="Hole XYZ" Kind="InputPin" />
+            <Pin Id="ADO3ZbwZucpNnOgfTgonWp" Name="Region XYZ" Kind="InputPin" />
+            <Pin Id="ORBlRN9zW4MOZSVz4RIn8f" Name="Region Attrib" Kind="InputPin" />
+            <Pin Id="LVFq8x3PiDuQZmBC1rPAqK" Name="Region Vol Const" Kind="InputPin" />
+            <Pin Id="DQSkYj99nt3MmAEqJhQ5wq" Name="Bin Sizes" Kind="InputPin" />
+            <Pin Id="JP2zXyKJCktMFROXWuQhYL" Name="File Name" Kind="InputPin" />
+            <Pin Id="EucW4pka4tzQOG4B4KlHUU" Name="Result" Kind="OutputPin" />
+          </Node>
+        </Canvas>
+        <Patch Id="KREEMXFEzyROGsbiNLLFH9" Name="Create" />
+        <Patch Id="QTZFlvrSvvtMy2kJeNgAhZ" Name="Update" />
+        <ProcessDefinition Id="JbEWg6buQxrNaxg3UzmodW">
+          <Fragment Id="KF007OIDkWAOYxzBiHgSEK" Patch="KREEMXFEzyROGsbiNLLFH9" Enabled="true" />
+          <Fragment Id="TNF8MSORVw1NtdoKXFGIsa" Patch="QTZFlvrSvvtMy2kJeNgAhZ" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <PlatformDependency Id="TcKM7M3yFtsNyl6fIzBfPH" Location="System" />
+  <PlatformDependency Id="OKq8jMFNZ0gN98u2oMjsAn" Location="System.Linq" />
+  <PlatformDependency Id="GJCDIyzuHEzL5PNVaufS3Q" Location="System.Runtime.InteropServices" />
+  <PlatformDependency Id="ClztH2L2RSuPxhpEEuQIRJ" Location="./lib/net6.0/TetGenNativeWrapper.dll" />
+</Document>
