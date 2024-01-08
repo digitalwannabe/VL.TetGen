@@ -1,2 +1,6 @@
 /csharp/NativeWrapper/bin/
 /csharp/NativeWrapper/obj/
+
+/src/obj/
+/src/.vs/
+/lib/

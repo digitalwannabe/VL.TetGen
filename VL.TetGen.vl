@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="EWfRz1Fc0vDNhcP50AhRgB" LanguageVersion="2023.5.3-0423-gee17475a3a" Version="0.128">
-  <NugetDependency Id="VAHgOaemmkIPxdPIOB6nLO" Location="VL.CoreLib" Version="2023.5.3-0423-gee17475a3a" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="EWfRz1Fc0vDNhcP50AhRgB" LanguageVersion="2023.5.2" Version="0.128">
+  <NugetDependency Id="VAHgOaemmkIPxdPIOB6nLO" Location="VL.CoreLib" Version="2023.5.2" />
   <Patch Id="CX04FJC9M84NKk3a74Usej">
     <Canvas Id="V5PnnUE9C6dMe3yLVt25kv" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="I8morQ03tRoMI0hOsU3W6j">
         <Canvas Id="KL3jQcax6NeOkgOhx50LaC" CanvasType="Group">
-          <Node Bounds="250,358,340,82" Id="F5FSSvvIJkVPlKHtvdC2UG">
+          <Node Bounds="403,180,329,80" Id="F5FSSvvIJkVPlKHtvdC2UG">
             <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -25,36 +25,39 @@
             <Patch Id="TSy5ZYEveyuLCmx2Pm4sEE" ManuallySortedPins="true">
               <Patch Id="Q3w49s7ZIWvLBD7MMtIwkh" Name="Create" ManuallySortedPins="true" />
               <Patch Id="HUIc9yrOp7dQboRmNYdK9L" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="273,392,305,19" Id="PBdFRA3cgnFL2BVbaLllsR">
-                <p:NodeReference LastCategoryFullName="Geometry.Tetrahedralization.NativeWrapper.NativeAdapter" LastDependency="NativeWrapper.csproj">
+              <Node Bounds="415,212,305,19" Id="IsNEWcSwOadMRvXaGwz0MZ">
+                <p:NodeReference LastCategoryFullName="Geometry.Tetrahedralization.NativeWrapper.NativeWrapper" LastDependency="NativeWrapper.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="Category" Name="Geometry" />
-                  <CategoryReference Kind="Category" Name="Tetrahedralization" />
-                  <CategoryReference Kind="Category" Name="NativeWrapper" />
-                  <CategoryReference Kind="ClassType" Name="NativeAdapter" />
+                  <CategoryReference Kind="AssemblyCategory" Name="Geometry" />
+                  <CategoryReference Kind="AssemblyCategory" Name="Tetrahedralization" />
+                  <CategoryReference Kind="AssemblyCategory" Name="NativeWrapper" />
+                  <CategoryReference Kind="AssemblyCategory" Name="NativeWrapper" NeedsToBeDirectParent="true">
+                    <p:OuterCategoryReference Kind="AssemblyCategory" Name="NativeWrapper" NeedsToBeDirectParent="true" />
+                  </CategoryReference>
+                  <AssemblyReference ID="NativeWrapper.dll" />
                   <Choice Kind="OperationCallFlag" Name="tetCalculate" />
                 </p:NodeReference>
-                <Pin Id="BPUH2Kl8ZoGK9VzF29Rq7s" Name="Behaviour" Kind="InputPin" />
-                <Pin Id="D10F2rjdigRMWoleoCxu28" Name="Vert XYZ" Kind="InputPin" />
-                <Pin Id="ESP6DtB2updMpM3latKOtY" Name="Vert Attr" Kind="InputPin" />
-                <Pin Id="DDVwVOEnhueMbBVRnKFJTw" Name="Vert Marker" Kind="InputPin" />
-                <Pin Id="LcYQBMjBsXgLlrKoNcyUxe" Name="Num Poly" Kind="InputPin" />
-                <Pin Id="BIrMohs9aZYO9BVxrk3prh" Name="Num Vertices" Kind="InputPin" />
-                <Pin Id="RRffa3ao9cNOCxGginYFMc" Name="Vert Index" Kind="InputPin" />
-                <Pin Id="L1VOR3KcMlHQLcY9skQEW5" Name="Num FHoles" Kind="InputPin" />
-                <Pin Id="UUvqR2Xw3ITLH0GAsGExzZ" Name="F Hole XYZ" Kind="InputPin" />
-                <Pin Id="SPTXEgIFfo8Ohli9xIGGLH" Name="Facet Marker" Kind="InputPin" />
-                <Pin Id="LnT4OBdwCjRLIvBVkhYtnY" Name="Hole XYZ" Kind="InputPin" />
-                <Pin Id="EJCLkOAacL7LKNYXVi3X9v" Name="Region XYZ" Kind="InputPin" />
-                <Pin Id="DjIHCXYGD0sNBSSruUamKJ" Name="Region Attrib" Kind="InputPin" />
-                <Pin Id="Euk5NXWbzhXQIMlz5wdmCX" Name="Region Vol Const" Kind="InputPin" />
-                <Pin Id="CIT6RbdJyEZOlognNnQGaq" Name="Bin Sizes" Kind="InputPin" />
-                <Pin Id="EXIUXm2RvTgNID5FumfVYy" Name="File Name" Kind="InputPin" />
-                <Pin Id="KKTWnFpC7sZMwI27MnmTfT" Name="Result" Kind="OutputPin" />
+                <Pin Id="AggOBJh7vyRNLpmdEmKfPL" Name="Behaviour" Kind="InputPin" />
+                <Pin Id="COX9lk2hfJGNvsLJmlf4mG" Name="Vert XYZ" Kind="InputPin" />
+                <Pin Id="GPgdglP8ynXP3A9jnqB9Dw" Name="Vert Attr" Kind="InputPin" />
+                <Pin Id="K8YdeixGqUhM465DokSI7m" Name="Vert Marker" Kind="InputPin" />
+                <Pin Id="QOIIE6Xjp33Lq7gm3MQilv" Name="Num Poly" Kind="InputPin" />
+                <Pin Id="PzAKpc0hsnyPpodXqUw5bH" Name="Num Vertices" Kind="InputPin" />
+                <Pin Id="TpWbD94pjHsL0xNTuk7quR" Name="Vert Index" Kind="InputPin" />
+                <Pin Id="MkQIr9qEqY1OpmeBpCH6l7" Name="Num FHoles" Kind="InputPin" />
+                <Pin Id="QRzktpzjBQoPUWz89WAGRV" Name="F Hole XYZ" Kind="InputPin" />
+                <Pin Id="C8sAShVbsThLHPQv28MCyG" Name="Facet Marker" Kind="InputPin" />
+                <Pin Id="CZj49GuIUkeQLdtDxAmr9q" Name="Hole XYZ" Kind="InputPin" />
+                <Pin Id="CuQZFV0p5iMLkIlhGiuxzo" Name="Region XYZ" Kind="InputPin" />
+                <Pin Id="GI7gfZ3sHapOyb67luiD3V" Name="Region Attrib" Kind="InputPin" />
+                <Pin Id="OjBFXmY0JX4PFwvbRk44Fn" Name="Region Vol Const" Kind="InputPin" />
+                <Pin Id="KGrqR2wOcgINnhahZRfavE" Name="Bin Sizes" Kind="InputPin" />
+                <Pin Id="J3Kp73JUy6oPkeN2iOyIKn" Name="File Name" Kind="InputPin" />
+                <Pin Id="TVLt76JJg76MgUK6rculga" Name="Result" Kind="OutputPin" />
               </Node>
             </Patch>
           </Node>
-          <Pad Id="BB6DoXABRvRN9KVBy1Vtir" Comment="Condition" Bounds="250,311,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="BB6DoXABRvRN9KVBy1Vtir" Comment="Condition" Bounds="376,131,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -73,8 +76,5 @@
       </Patch>
     </Node>
   </Patch>
-  <PlatformDependency Id="TcKM7M3yFtsNyl6fIzBfPH" Location="System" />
-  <PlatformDependency Id="OKq8jMFNZ0gN98u2oMjsAn" Location="System.Linq" />
-  <PlatformDependency Id="GJCDIyzuHEzL5PNVaufS3Q" Location="System.Runtime.InteropServices" />
-  <ProjectDependency Id="OdD68RhAM2TMTIR2MKBrTQ" Location="./csharp/NativeWrapper/NativeWrapper.csproj" />
+  <PlatformDependency Id="Tfc9cx5sPa3NDmeStcjdNu" Location="./lib/net6.0/NativeWrapper.dll" />
 </Document>
