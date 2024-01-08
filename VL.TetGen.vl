@@ -15,31 +15,53 @@
       </p:NodeReference>
       <Patch Id="I8morQ03tRoMI0hOsU3W6j">
         <Canvas Id="KL3jQcax6NeOkgOhx50LaC" CanvasType="Group">
-          <Node Bounds="438,277,305,19" Id="OJktaEen1JcQd9LUtu5CkE">
-            <p:NodeReference LastCategoryFullName="TetGenNativeWrapper.NativeDllAdapter" LastDependency="TetGenNativeWrapper.dll">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="AssemblyCategory" Name="TetGenNativeWrapper" />
-              <CategoryReference Kind="AssemblyCategory" Name="NativeDllAdapter" />
-              <Choice Kind="OperationCallFlag" Name="tetCalculate" />
+          <Node Bounds="250,358,340,82" Id="F5FSSvvIJkVPlKHtvdC2UG">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+              <Choice Kind="ApplicationStatefulRegion" Name="If" />
             </p:NodeReference>
-            <Pin Id="FPkLicP3uorNKB9kEo8zSo" Name="Behaviour" Kind="InputPin" />
-            <Pin Id="C5vjXbQR1t7O39d0KRuY80" Name="Vert XYZ" Kind="InputPin" />
-            <Pin Id="SgzJElIC994PmRUwv9vVwK" Name="Vert Attr" Kind="InputPin" />
-            <Pin Id="D0sUMzf0BFWO9gyXjjLtGw" Name="Vert Marker" Kind="InputPin" />
-            <Pin Id="UqEVnqLk8oXMujmAyZ0xVd" Name="Num Poly" Kind="InputPin" />
-            <Pin Id="O9Qxqm2XSpqMuhgQCiEl6Y" Name="Num Vertices" Kind="InputPin" />
-            <Pin Id="M31SpjC1TjmMBJo99IcQ7q" Name="Vert Index" Kind="InputPin" />
-            <Pin Id="HMPHrJREOMYQIhp912AVzf" Name="Num FHoles" Kind="InputPin" />
-            <Pin Id="QTu5tj9CJUyQGclT7GbKfL" Name="F Hole XYZ" Kind="InputPin" />
-            <Pin Id="GFa3aXUYi6UOBKT9qBXP1T" Name="Facet Marker" Kind="InputPin" />
-            <Pin Id="AVG6PHiws18Nttb1fm8hcG" Name="Hole XYZ" Kind="InputPin" />
-            <Pin Id="ADO3ZbwZucpNnOgfTgonWp" Name="Region XYZ" Kind="InputPin" />
-            <Pin Id="ORBlRN9zW4MOZSVz4RIn8f" Name="Region Attrib" Kind="InputPin" />
-            <Pin Id="LVFq8x3PiDuQZmBC1rPAqK" Name="Region Vol Const" Kind="InputPin" />
-            <Pin Id="DQSkYj99nt3MmAEqJhQ5wq" Name="Bin Sizes" Kind="InputPin" />
-            <Pin Id="JP2zXyKJCktMFROXWuQhYL" Name="File Name" Kind="InputPin" />
-            <Pin Id="EucW4pka4tzQOG4B4KlHUU" Name="Result" Kind="OutputPin" />
+            <Pin Id="GMtAJhWuJEUNTppa07ZulI" Name="Condition" Kind="InputPin" />
+            <Patch Id="TSy5ZYEveyuLCmx2Pm4sEE" ManuallySortedPins="true">
+              <Patch Id="Q3w49s7ZIWvLBD7MMtIwkh" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="HUIc9yrOp7dQboRmNYdK9L" Name="Then" ManuallySortedPins="true" />
+              <Node Bounds="273,392,305,19" Id="PBdFRA3cgnFL2BVbaLllsR">
+                <p:NodeReference LastCategoryFullName="Geometry.Tetrahedralization.NativeWrapper.NativeAdapter" LastDependency="NativeWrapper.csproj">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="Category" Name="Geometry" />
+                  <CategoryReference Kind="Category" Name="Tetrahedralization" />
+                  <CategoryReference Kind="Category" Name="NativeWrapper" />
+                  <CategoryReference Kind="ClassType" Name="NativeAdapter" />
+                  <Choice Kind="OperationCallFlag" Name="tetCalculate" />
+                </p:NodeReference>
+                <Pin Id="BPUH2Kl8ZoGK9VzF29Rq7s" Name="Behaviour" Kind="InputPin" />
+                <Pin Id="D10F2rjdigRMWoleoCxu28" Name="Vert XYZ" Kind="InputPin" />
+                <Pin Id="ESP6DtB2updMpM3latKOtY" Name="Vert Attr" Kind="InputPin" />
+                <Pin Id="DDVwVOEnhueMbBVRnKFJTw" Name="Vert Marker" Kind="InputPin" />
+                <Pin Id="LcYQBMjBsXgLlrKoNcyUxe" Name="Num Poly" Kind="InputPin" />
+                <Pin Id="BIrMohs9aZYO9BVxrk3prh" Name="Num Vertices" Kind="InputPin" />
+                <Pin Id="RRffa3ao9cNOCxGginYFMc" Name="Vert Index" Kind="InputPin" />
+                <Pin Id="L1VOR3KcMlHQLcY9skQEW5" Name="Num FHoles" Kind="InputPin" />
+                <Pin Id="UUvqR2Xw3ITLH0GAsGExzZ" Name="F Hole XYZ" Kind="InputPin" />
+                <Pin Id="SPTXEgIFfo8Ohli9xIGGLH" Name="Facet Marker" Kind="InputPin" />
+                <Pin Id="LnT4OBdwCjRLIvBVkhYtnY" Name="Hole XYZ" Kind="InputPin" />
+                <Pin Id="EJCLkOAacL7LKNYXVi3X9v" Name="Region XYZ" Kind="InputPin" />
+                <Pin Id="DjIHCXYGD0sNBSSruUamKJ" Name="Region Attrib" Kind="InputPin" />
+                <Pin Id="Euk5NXWbzhXQIMlz5wdmCX" Name="Region Vol Const" Kind="InputPin" />
+                <Pin Id="CIT6RbdJyEZOlognNnQGaq" Name="Bin Sizes" Kind="InputPin" />
+                <Pin Id="EXIUXm2RvTgNID5FumfVYy" Name="File Name" Kind="InputPin" />
+                <Pin Id="KKTWnFpC7sZMwI27MnmTfT" Name="Result" Kind="OutputPin" />
+              </Node>
+            </Patch>
           </Node>
+          <Pad Id="BB6DoXABRvRN9KVBy1Vtir" Comment="Condition" Bounds="250,311,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="KREEMXFEzyROGsbiNLLFH9" Name="Create" />
         <Patch Id="QTZFlvrSvvtMy2kJeNgAhZ" Name="Update" />
@@ -47,11 +69,12 @@
           <Fragment Id="KF007OIDkWAOYxzBiHgSEK" Patch="KREEMXFEzyROGsbiNLLFH9" Enabled="true" />
           <Fragment Id="TNF8MSORVw1NtdoKXFGIsa" Patch="QTZFlvrSvvtMy2kJeNgAhZ" Enabled="true" />
         </ProcessDefinition>
+        <Link Id="PPGXL3uzDfRPwmKh2eG8W8" Ids="BB6DoXABRvRN9KVBy1Vtir,GMtAJhWuJEUNTppa07ZulI" />
       </Patch>
     </Node>
   </Patch>
   <PlatformDependency Id="TcKM7M3yFtsNyl6fIzBfPH" Location="System" />
   <PlatformDependency Id="OKq8jMFNZ0gN98u2oMjsAn" Location="System.Linq" />
   <PlatformDependency Id="GJCDIyzuHEzL5PNVaufS3Q" Location="System.Runtime.InteropServices" />
-  <PlatformDependency Id="ClztH2L2RSuPxhpEEuQIRJ" Location="./lib/net6.0/TetGenNativeWrapper.dll" />
+  <ProjectDependency Id="OdD68RhAM2TMTIR2MKBrTQ" Location="./csharp/NativeWrapper/NativeWrapper.csproj" />
 </Document>
