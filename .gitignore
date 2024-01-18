@@ -4,3 +4,9 @@
 /src/obj/
 /src/.vs/
 /lib/
+/csharp/TetGenNativeWrapper/.vs/
+/csharp/TetGenNativeWrapper/bin/
+/csharp/TetGenNativeWrapper/obj/
+/src/TetGenNativeWrapper/obj/
+/src/TetGenNativeWrapper/.vs/
+/src/TetGenNativeWrapper/bin/
