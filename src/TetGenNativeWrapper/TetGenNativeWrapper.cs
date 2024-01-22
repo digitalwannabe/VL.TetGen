@@ -7,7 +7,7 @@ using System.Security.Cryptography.X509Certificates;
 using VL.Lib.Collections;
 using Vector3 = Stride.Core.Mathematics.Vector3;
 
-namespace Main;
+namespace Geometry.TetGen;
 
 public static class TetGenNativeWrapper
 {
@@ -25,12 +25,12 @@ public static class TetGenNativeWrapper
 
 
 
-    public static void Tetrahedralize(IEnumerable<Vector3> vertices, IEnumerable<int> indices, IEnumerable<int> vertexIDs,
+    public static void WrapTetGen(IEnumerable<Vector3> vertices, IEnumerable<int> indices, IEnumerable<int> vertexIDs,
                                        int holeCount, IEnumerable<Vector3> holeIndicators, 
                                        int regionCount, IEnumerable<Vector3> regionIndicators, IEnumerable<double> regionAttributes, IEnumerable<double> regionVolumeConstraints,
                                        IEnumerable<int> polygonCount, IEnumerable<int> vertexCount,
                                        IEnumerable<int> facetHoleCount, IEnumerable<Vector3> facetHoleIndicators, IEnumerable<int> facetIDs,
-                                       string fileName, bool writeInputToFile, bool writeOutputToFile, string behaviour, bool run,
+                                       string fileName, bool writeInputToFile, bool writeOutputToFile, string behaviour, /*bool run,*/
                                        out IEnumerable<Vector3> verticesOut, out IEnumerable<int> triangleIndices, out IEnumerable<int> tetrahedronIndices,
                                        out IEnumerable<int> vertexIDsOut, out IEnumerable<int> facetIDsOut, out IEnumerable<double> regionAttributesOut, out IEnumerable<int> terahedronNeighbors,
                                        out string Status)
@@ -47,8 +47,8 @@ public static class TetGenNativeWrapper
 
         Status = "OK";
 
-        if (run)
-        {
+        //if (run)
+        //{
 
             int computeNeighbors = Convert.ToInt32(behaviour.Contains("n"));
             int computeRegionAttr = Convert.ToInt32(behaviour.Contains("A"));
@@ -210,7 +210,7 @@ public static class TetGenNativeWrapper
 
             }
 
-        }
+        //}
 
         verticesOut = v;
         triangleIndices = triI;
