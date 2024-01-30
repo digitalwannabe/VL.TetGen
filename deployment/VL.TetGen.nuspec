@@ -3,7 +3,7 @@
     <metadata>
         <!-- Required elements-->
         <id>VL.TetGen</id>
-        <version>1.0.2-alpha</version>
+        <version>1.0.3-alpha</version>
         <description>3D Tetrahedralization and Surface Delaunay Triangulation for VL</description>
         <authors>digital.wannabe</authors>
         <license type="expression">MIT</license>

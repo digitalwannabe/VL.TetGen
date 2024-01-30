@@ -496,7 +496,7 @@
             <Pad Id="L95VIN5qfwKL4JH44Sb4FX" SlotId="M0phnloolHfPfUfNOeEngn" Bounds="804,212" />
             <Pad Id="SNkLBYgIvY6NftCI7AdfSs" SlotId="NWmDugDhgnrL4xlfNQplCd" Bounds="854,241" />
             <Node Bounds="558,0,345,19" Id="N1sJiKIDZwbMS07SDpt8Po">
-              <p:NodeReference LastCategoryFullName="Geometry.TetGen.TetGenNativeWrapper" LastDependency="TetGenNativeWrapper.dll">
+              <p:NodeReference LastCategoryFullName="Geometry.TetGen.TetGenNativeWrapper" LastDependency="VL.TetGen.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="WrapTetGen" />
               </p:NodeReference>
@@ -2391,5 +2391,5 @@
     </Node>
   </Patch>
   <NugetDependency Id="E1GJBY6UIKDPQrZlRbwCqi" Location="VL.Stride" Version="2023.5.2" />
-  <PlatformDependency Id="T075JQl7nzdOg6VyG7IunC" Location="./lib/net6.0/TetGenNativeWrapper.dll" />
+  <PlatformDependency Id="SOfplHg3Bt8MU4CIx6VwI0" Location="./lib/net6.0/VL.TetGen.dll" />
 </Document>
