@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="HDGdDTovO2bNmhhbiED862" LanguageVersion="2024.6.0-0016-gdfa01d8b7e" Version="0.128">
-  <NugetDependency Id="RbSohqWcpyPPIfmWwHG50z" Location="VL.CoreLib" Version="2024.6.0-0016-gdfa01d8b7e" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="HDGdDTovO2bNmhhbiED862" LanguageVersion="2023.5.2" Version="0.128">
+  <NugetDependency Id="RbSohqWcpyPPIfmWwHG50z" Location="VL.CoreLib" Version="2023.5.2" />
   <Patch Id="ReyWvNVsy7rMjYGwxxFsjA">
     <Canvas Id="Akw0emGEzzkMczLW96exq4" DefaultCategory="3D.Geometry.Tetrahedralization" CanvasType="FullCategory">
       <!--
@@ -242,8 +242,8 @@
                 <CategoryReference Kind="Category" Name="Control" />
                 <Choice Kind="ProcessAppFlag" Name="Try" />
               </p:NodeReference>
-              <Pin Id="BMLI3uIzwrwMNVF7ewXO1C" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="BrrtqEqUzQZOq53ldinQ3d" Name="User Exceptions Channel" Kind="InputPin" IsHidden="true" />
+              <Pin Id="BMLI3uIzwrwMNVF7ewXO1C" Name="Node Context" Kind="InputPin" />
+              <Pin Id="BrrtqEqUzQZOq53ldinQ3d" Name="User Exceptions Channel" Kind="InputPin" />
               <Pin Id="IO0pdAheUMrPYn8OpJThN4" Name="Stick To Last Valid Outputs" Kind="InputPin" />
               <Pin Id="Guebd2Smh9VLdqYNLEiFpk" Name="Reset Region On Failure" Kind="InputPin" />
               <Pin Id="DhoXOZ14fN3NU0FpcrjXqv" Name="Success" Kind="OutputPin" />
@@ -314,7 +314,6 @@
                         <CategoryReference Kind="ClassType" Name="TetrahedralMesh" NeedsToBeDirectParent="true" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
-                      <Pin Id="VIxnBQhjJFwOW4PzEBmTlZ" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="C6UvPz3EqBtLgWsShTsHiS" Name="Output" Kind="StateOutputPin" />
                     </Node>
                     <Node Bounds="644,591,75,26" Id="FCiFoPjwsFXOmSVh0vtPwV">
@@ -334,7 +333,7 @@
                         <Choice Kind="OperationCallFlag" Name="Split" />
                       </p:NodeReference>
                       <Pin Id="FrnGPlzUvPyLRJcvmguEhZ" Name="Input" Kind="StateInputPin" />
-                      <Pin Id="OpgYRkdaVAvNC1Ny4iHTZS" Name="Output" Kind="OutputPin" IsHidden="true" />
+                      <Pin Id="OpgYRkdaVAvNC1Ny4iHTZS" Name="Output" Kind="OutputPin" />
                       <Pin Id="SGc1ODOlZrcPiXLexlRIMF" Name="Region Count" Kind="OutputPin" />
                       <Pin Id="OVce1XDxua6QCWbr7Ys9kr" Name="Region Indicators" Kind="OutputPin" />
                       <Pin Id="PmasxqZkiaJPCOgeTziyjQ" Name="Region Attributes" Kind="OutputPin" />
@@ -369,7 +368,6 @@
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="GetFacets" />
                       </p:NodeReference>
-                      <Pin Id="Pjwpcz8xZnZNOAGeo9mgXZ" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="K7mmZnwlYXiNy9NgwK4Vbs" Name="Input" Kind="InputPin" />
                       <Pin Id="KMBhM5NRWiTOqkPneu5PK5" Name="PolgonCount" Kind="OutputPin" />
                       <Pin Id="SmH00G9GMA4MZYJ2Wzc3Of" Name="VertexCount" Kind="OutputPin" />
@@ -559,6 +557,7 @@
               <Pin Id="B5mPne6ZsRaNLvyIJXKOT2" Name="Has Changed" Kind="OutputPin" />
               <ControlPoint Id="SrGmBQ7N3DlPu65b1tdg1t" Bounds="1200,106" Alignment="Top" />
               <ControlPoint Id="G5tsT99FMy3Olo8WKiACxf" Bounds="1369,106" Alignment="Top" />
+              <ControlPoint Id="LRfpuX6kzLzMv30xmbCuMl" Bounds="1275,717" Alignment="Bottom" />
               <Patch Id="DMfSsui7fVrMg1SO9rGoxk" ManuallySortedPins="true">
                 <Patch Id="KuhawAdq9gMPhPV4qeDrcb" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="TYx0BpXhGG5LxM9hw5PpXk" Name="Then" ManuallySortedPins="true" />
@@ -571,6 +570,7 @@
                   <ControlPoint Id="F8IkHt8cCVsLFFluzvuERK" Bounds="1405,530" Alignment="Bottom" />
                   <Pin Id="CiLHA3RRZ83MO9MuGqHO6L" Name="Iteration Count" Kind="InputPin" />
                   <Pin Id="Vtk8xSM6FiPNYGbtqDaB1s" Name="Break" Kind="OutputPin" />
+                  <ControlPoint Id="DOc5SCkAkLLMnxx2O2Ov2S" Bounds="1278,530" Alignment="Bottom" />
                   <Patch Id="UNUNZNxpFypNx3hW0VJoDY" ManuallySortedPins="true">
                     <Patch Id="KqnsqcpMGY2N4gq7NZj10H" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="TNxkARMYfYhPzRfnKliUmx" Name="Update" ManuallySortedPins="true">
@@ -659,11 +659,9 @@
                         <CategoryReference Kind="RecordType" Name="TriangleMembership" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
-                      <Pin Id="Dlw89b5GbO7OVWOaaTRgl3" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="QoiLBPZvTc3QDRpTlCxiBZ" Name="Output" Kind="StateOutputPin" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="DOc5SCkAkLLMnxx2O2Ov2S" Bounds="1278,530" Alignment="Bottom" />
                 </Node>
                 <Node Bounds="1390,123,44,19" Id="DX0AB3FKoFSNKogIl0IJqZ">
                   <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
@@ -717,7 +715,6 @@
                   <ControlPoint Id="R0qhm6wIxUsO6wuKJLwvpi" Bounds="1275,695" Alignment="Bottom" />
                 </Node>
               </Patch>
-              <ControlPoint Id="LRfpuX6kzLzMv30xmbCuMl" Bounds="1275,717" Alignment="Bottom" />
             </Node>
             <Node Bounds="1369,44,83,26" Id="Odkm1XSkiR8NU0z0erXekb">
               <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
@@ -770,6 +767,7 @@
               <ControlPoint Id="DinATU3w4FAPELjy0nrMz6" Bounds="599,981" Alignment="Bottom" />
               <ControlPoint Id="D6xVmA5I8IWOdDlbBnoZV1" Bounds="578,496" Alignment="Top" />
               <ControlPoint Id="GefvnDZIlKRMg4s3inMYev" Bounds="671,496" Alignment="Top" />
+              <ControlPoint Id="OovHfYQelaXM6GHmAlAIFr" Bounds="728,496" Alignment="Top" />
               <Patch Id="CNoaHhkhw8rLpfGqXYQQRc" ManuallySortedPins="true">
                 <Patch Id="LpuWSwHYoi5Lubxfo8zAw8" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="VQUxuSBAAB2NMHVs50tJ30" Name="Then" ManuallySortedPins="true" />
@@ -780,7 +778,6 @@
                     <CategoryReference Kind="ClassType" Name="VertexDeclaration" />
                     <Choice Kind="ProcessAppFlag" Name="Pos3Norm3Tex2" />
                   </p:NodeReference>
-                  <Pin Id="JeD2H4Y5WjCPnbmfujSfSX" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="JiJXdgZWYqWMgd8LMxxsL5" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Pad Id="DHQjcKrOeV0Pvi7IwvJ69g" Comment="Primitive Type" Bounds="662,918,152,15" ShowValueBox="true" isIOBox="true" Value="TriangleList">
@@ -848,14 +845,12 @@
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="DynamicMesh (Indexed)" />
                   </p:NodeReference>
-                  <Pin Id="P0s2TIUO6oaNMg4lrGtEV7" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="GLFlGwfRfN9LRwC0LxHjCx" Name="Data" Kind="InputPin" />
                   <Pin Id="BnGwr3HQZlkQHlIDMdVAWw" Name="Update Buffer" Kind="InputPin" />
                   <Pin Id="BC8LDYSkZr6LT5euY54ncu" Name="Vertex Declaration" Kind="InputPin" />
                   <Pin Id="RfGilanrQUaO8yi5h2MQls" Name="Topology" Kind="InputPin" />
                   <Pin Id="P4PcBDGejWXM5CiGNBZanR" Name="Indices" Kind="InputPin" />
                   <Pin Id="LsPC7NFFUXWPhO8T9sjppy" Name="Bounding Box" Kind="InputPin" />
-                  <Pin Id="OxO6eK5uQ8bP3IAMfRKyTZ" Name="Force Update" Kind="InputPin" IsHidden="true" />
                   <Pin Id="N4zy1CcG1H5OZXPmDwf5Qt" Name="SetBoundingBox" Kind="ApplyPin" />
                   <Pin Id="ISUCkjsszGOLccEUky1Z5U" Name="Output" Kind="OutputPin" />
                 </Node>
@@ -873,7 +868,6 @@
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="GenerateNormals" />
                   </p:NodeReference>
-                  <Pin Id="P3uGXQ9GjN6OLwnLCPVqEN" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="NYQHbytklAJOwxu1HM3GWC" Name="Vertices" Kind="InputPin" />
                   <Pin Id="TdAzgGLnHgzPd4K0Q9MwSQ" Name="Indices" Kind="InputPin" />
                   <Pin Id="Uzw1tJiTTwyNkgHvtd5Bh3" Name="Is Triangle Strip" Kind="InputPin" />
@@ -898,7 +892,6 @@
                   <Pin Id="FXxwHX5T3ngQN7E47ikfAc" Name="Result" Kind="OutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="OovHfYQelaXM6GHmAlAIFr" Bounds="728,496" Alignment="Top" />
             </Node>
             <Pad Id="LfnYfP9pzdNLNklVZ42Xxu" SlotId="FVa0uqRFiTFLGDEZ8C8lgJ" Bounds="89,691">
               <p:Value />
@@ -2147,6 +2140,13 @@
               <Pin Id="S0clcfN024PPDp2LQkbQ9Y" Name="Force" Kind="InputPin" />
               <Pin Id="GpQfHim6nInLZkdFvgaIMh" Name="Dispose Cached Outputs" Kind="InputPin" />
               <Pin Id="MlfkASLEGYJN2zkfFGSADv" Name="Has Changed" Kind="OutputPin" />
+              <ControlPoint Id="VO4S5acgXyWM687OmAgX9D" Bounds="489,257" Alignment="Top" />
+              <ControlPoint Id="FnzI0Xo9h52OPqoqHJ211i" Bounds="509,257" Alignment="Top" />
+              <ControlPoint Id="HJSGZELNSYtOl40RAyI78H" Bounds="529,257" Alignment="Top" />
+              <ControlPoint Id="AMScXPgS3VLOjLhbAaHlCd" Bounds="548,257" Alignment="Top" />
+              <ControlPoint Id="OAiynaKpIBWMJt089oSlJp" Bounds="571,257" Alignment="Top" />
+              <ControlPoint Id="UQwsWnrTDa9L2VEmrdjzHl" Bounds="593,257" Alignment="Top" />
+              <ControlPoint Id="NOubUezBKVgPnxMs6RQlEa" Bounds="489,378" Alignment="Bottom" />
               <Patch Id="QPZX4gLL2jbLKvvCd3p23l" ManuallySortedPins="true">
                 <Patch Id="U9Z71NOrBbZN1lwZl3bUoA" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="VcM80KDLKvfMK0jHONA9nJ" Name="Then" ManuallySortedPins="true" />
@@ -2157,6 +2157,13 @@
                     <Choice Kind="ApplicationStatefulRegion" Name="ForEach (Max)" />
                   </p:NodeReference>
                   <Pin Id="H9Fl8GesHMDLhG7T8qegfx" Name="Break" Kind="OutputPin" />
+                  <ControlPoint Id="CyWFLEsVX2DP7QUO1tAEzp" Bounds="488,277" Alignment="Top" />
+                  <ControlPoint Id="HCz3pC8hh31NFNjBGzI1I5" Bounds="509,277" Alignment="Top" />
+                  <ControlPoint Id="TapuOBayEHbPwdU4SGQklV" Bounds="528,277" Alignment="Top" />
+                  <ControlPoint Id="DhwUCUh13ESMDD18gH8CjF" Bounds="547,277" Alignment="Top" />
+                  <ControlPoint Id="GY8qwogj4KOPXbLTS8HFv1" Bounds="568,277" Alignment="Top" />
+                  <ControlPoint Id="GHQ9skUCElTMk2js6hSgwX" Bounds="585,277" Alignment="Top" />
+                  <ControlPoint Id="SoEf0ExSwlNMWkTUnRY9rH" Bounds="489,358" Alignment="Bottom" />
                   <Patch Id="GJ46ABnjZsGLr0BXcWAQ6r" ManuallySortedPins="true">
                     <Patch Id="CGIRzWtnFVGNWleAIvDVqV" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="TUz86knhjNyNmGKWgI3Axz" Name="Update" ManuallySortedPins="true" />
@@ -2167,7 +2174,6 @@
                         <CategoryReference Kind="RecordType" Name="Facet" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
-                      <Pin Id="NAuug2gbN0NNggxOrp8x5D" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="LgwufvAwZKcPjfUNkazsZc" Name="PolgonCount" Kind="InputPin" />
                       <Pin Id="FQablO7LHstOqggTw97ErG" Name="VertexCount" Kind="InputPin" />
                       <Pin Id="DhljjkTykNtLPYtajqNBd9" Name="Indices" Kind="InputPin" />
@@ -2177,22 +2183,8 @@
                       <Pin Id="DiJY1GR4ThsN8v7GMz8s3e" Name="Output" Kind="StateOutputPin" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="CyWFLEsVX2DP7QUO1tAEzp" Bounds="488,277" Alignment="Top" />
-                  <ControlPoint Id="HCz3pC8hh31NFNjBGzI1I5" Bounds="509,277" Alignment="Top" />
-                  <ControlPoint Id="TapuOBayEHbPwdU4SGQklV" Bounds="528,277" Alignment="Top" />
-                  <ControlPoint Id="DhwUCUh13ESMDD18gH8CjF" Bounds="547,277" Alignment="Top" />
-                  <ControlPoint Id="GY8qwogj4KOPXbLTS8HFv1" Bounds="568,277" Alignment="Top" />
-                  <ControlPoint Id="GHQ9skUCElTMk2js6hSgwX" Bounds="585,277" Alignment="Top" />
-                  <ControlPoint Id="SoEf0ExSwlNMWkTUnRY9rH" Bounds="489,358" Alignment="Bottom" />
                 </Node>
               </Patch>
-              <ControlPoint Id="VO4S5acgXyWM687OmAgX9D" Bounds="489,257" Alignment="Top" />
-              <ControlPoint Id="FnzI0Xo9h52OPqoqHJ211i" Bounds="509,257" Alignment="Top" />
-              <ControlPoint Id="HJSGZELNSYtOl40RAyI78H" Bounds="529,257" Alignment="Top" />
-              <ControlPoint Id="AMScXPgS3VLOjLhbAaHlCd" Bounds="548,257" Alignment="Top" />
-              <ControlPoint Id="OAiynaKpIBWMJt089oSlJp" Bounds="571,257" Alignment="Top" />
-              <ControlPoint Id="UQwsWnrTDa9L2VEmrdjzHl" Bounds="593,257" Alignment="Top" />
-              <ControlPoint Id="NOubUezBKVgPnxMs6RQlEa" Bounds="489,378" Alignment="Bottom" />
             </Node>
             <ControlPoint Id="VwWrTIkM5d2PRhp3E4PJkt" Bounds="478,121" />
             <ControlPoint Id="I0MRqsbnDJaOf2dYLFIFNo" Bounds="496,142" />
@@ -2277,7 +2269,7 @@
                     <Choice Kind="OperationCallFlag" Name="Split" />
                   </p:NodeReference>
                   <Pin Id="GpZWrBH656cOu705ELAxwW" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="LvXTkPNPV91LVTABwYd9df" Name="Output" Kind="OutputPin" IsHidden="true" />
+                  <Pin Id="LvXTkPNPV91LVTABwYd9df" Name="Output" Kind="OutputPin" />
                   <Pin Id="FriNHiRJJNvPUkkGTKs8ND" Name="PolgonCount" Kind="OutputPin" />
                   <Pin Id="MY7VwCgWUWRLJsv2kgBS4g" Name="VertexCount" Kind="OutputPin" />
                   <Pin Id="SWOKau7fBLcNBELlvlhgwL" Name="Indices" Kind="OutputPin" />
@@ -2398,6 +2390,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="E1GJBY6UIKDPQrZlRbwCqi" Location="VL.Stride" Version="2024.6.0-0016-gdfa01d8b7e" />
-  <PlatformDependency Id="VyMQoIaPKUfPPU3tHda6aB" Location="./lib/net8.0/TetGenNativeWrapper.dll" />
+  <NugetDependency Id="E1GJBY6UIKDPQrZlRbwCqi" Location="VL.Stride" Version="2023.5.2" />
+  <PlatformDependency Id="T075JQl7nzdOg6VyG7IunC" Location="./lib/net6.0/TetGenNativeWrapper.dll" />
 </Document>
