@@ -24,7 +24,7 @@ jobs:
     - name: Publish VL Nuget
       uses: vvvv/PublishVLNuget@1.0.42
       with:
-        csproj: src\TetGenNativeWrapper\TetGenNativeWrapper.csproj
+        csproj: src\VL.TetGen.csproj
         nuspec: deployment\VL.TetGen.nuspec
         icon-src: https://lichterloh.tv/dev/vl-tetgen/tetgen-logo-128.png
         icon-dst: ./deployment/nugeticon.png
